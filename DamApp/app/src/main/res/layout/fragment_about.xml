@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".fragments.AboutFragment">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/calea_gabriela_nav_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/nav_header_title" />
+
+    <!-- Version -->
+    <TextView
+        android:id="@+id/calea_gabriela_nav_header_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/nav_header_version" />
+
+    <!-- Year -->
+    <TextView
+        android:id="@+id/calea_gabriela_nav_header_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/nav_header_year" />
+
+    <!-- Team -->
+    <TextView
+        android:id="@+id/calea_gabriela_nav_header_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="260dp"
+        android:text="@string/nav_header_team" />
+
+</LinearLayout>
