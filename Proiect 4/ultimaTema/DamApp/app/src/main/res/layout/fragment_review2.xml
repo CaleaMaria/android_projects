@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <RatingBar
+        android:id="@+id/calea_gabriela_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/calea_gabriela_reviewInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/calea_gabriela_ratingBar"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/please_insert_your_review"
+        android:inputType="textMultiLine"
+        android:background="#E0E0E0"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+
+    <LinearLayout
+        android:id="@+id/calea_gabriela_buttonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calea_gabriela_reviewInput"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/calea_gabriela_saveFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_menu_save"
+            android:contentDescription="Save Review"
+            />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/calea_gabriela_deleteFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_menu_delete"
+            android:contentDescription="Delete Review" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/calea_gabriela_cancelFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Cancel" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/calea_gabriela_reviewListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/calea_gabriela_buttonGroup"
+        android:layout_alignParentBottom="true"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp" />
+</RelativeLayout>
