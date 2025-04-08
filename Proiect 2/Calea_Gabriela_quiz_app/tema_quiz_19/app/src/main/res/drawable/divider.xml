@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="2dp" /> <!-- Grosimea liniei -->
+    <solid android:color="#D3D3D3" /> <!-- Culoarea liniei -->
+</shape>

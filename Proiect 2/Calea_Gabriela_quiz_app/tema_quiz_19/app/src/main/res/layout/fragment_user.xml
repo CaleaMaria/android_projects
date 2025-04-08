@@ -1,0 +1,95 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".UserFragment">
+
+    <ImageView
+        android:id="@+id/Calea_Gabriela_user_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_user_profile"
+        android:tint="@color/dark_pink"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@id/Calea_Gabriela_et_first_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <EditText
+        android:id="@+id/Calea_Gabriela_et_first_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nume"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/Calea_Gabriela_user_profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Calea_Gabriela_et_last_name"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/Calea_Gabriela_et_last_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_prenume"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/Calea_Gabriela_et_first_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Calea_Gabriela_et_birthdate"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/Calea_Gabriela_et_birthdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_data_nasterii"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/Calea_Gabriela_et_last_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Calea_Gabriela_spinner_profile"
+        android:layout_marginBottom="16dp" />
+
+
+    <Spinner
+        android:id="@+id/Calea_Gabriela_spinner_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:entries="@array/profile_options"
+        app:layout_constraintTop_toBottomOf="@id/Calea_Gabriela_et_birthdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/Calea_Gabriela_btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buton_salveaza"
+        app:layout_constraintTop_toBottomOf="@id/Calea_Gabriela_spinner_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Calea_Gabriela_fab_home_user"
+        android:layout_marginBottom="16dp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Calea_Gabriela_fab_home_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        android:contentDescription="@string/fab_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
